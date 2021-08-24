@@ -1,0 +1,23 @@
+{
+  "name": "dupla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaioR-lab/TrabalhoDupla_JS_Node.git"
+  },
+  "author": "Caio, Rodolfo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaioR-lab/TrabalhoDupla_JS_Node/issues"
+  },
+  "homepage": "https://github.com/CaioR-lab/TrabalhoDupla_JS_Node#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "type": "module"
+}
