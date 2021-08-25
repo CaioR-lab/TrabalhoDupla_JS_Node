@@ -1,11 +1,14 @@
+import { PersonRepository } from "./Repository/person_repository.js";
+import { TypeUserRepository } from "./Repository/typeuser_repostiory.js";
+import { UserRepository } from "./Repository/user_repository.js";
 import { User } from "./Model/user.js";
 import { TypeUser } from "./Model/typeuser.js";
 import { Person } from "./Model/person.js";
-import { repository } from  "./Repository/repository.js";
 
-let userrepository = new repository('User');
-let personrepository = new repository('Person');
-let typeuserrepository = new repository('TypeUser');
+
+let userrepository = new UserRepository();
+let personrepository = new PersonRepository();
+let typeuserrepository = new TypeUserRepository();
 
 let typeuser = new TypeUser();
 typeuser.description= "obrabo";
@@ -16,14 +19,15 @@ let user = new User();
 user.email = "algumacoisa@gmail";
 user.password= "aquelelabemdificil";
 user.typeuser = typeuser;
-// userrepository.create(user);
+//  userrepository.create(user);
 
 let person = new Person();
-person.birthDate = Date.parse("March 21, 2012");
+person.birthDate = "2021-08-25T13:31:11.412Z";
 person.document = "teste";
 person.firstName = "Rodolfo";
 person.lastName = "Da Silva";
 person.user = user;
+console.log(person);
 personrepository.create(person);
 
-
+// userrepository.read();
